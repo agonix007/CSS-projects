@@ -1,7 +1,14 @@
-#first {
-  background-color: aqua;
+* {
+  /* m0+p0 */
+  margin: 0;
+  padding: 0;
 }
-.bg-orange {
-  background-color: rgb(238, 185, 13);
-  color: rgb(12, 155, 12);
+.red {
+  background: rgb(224, 18, 172);
+  color: white;
+  height: 350px;
+}
+.green {
+  background-color: green;
+  color: aqua;
 }
