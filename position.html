@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      li {
+        /* display: inline; */
+      }
+      header {
+        background-color: cadetblue;
+        color: white;
+        height: 60px;
+        /* position: sticky;
+        top: 0;
+        z-index: 1; */
+      }
+      p {
+        text-align: center;
+        border: 2px solid black;
+      }
+      .container {
+        background-color: aqua;
+        height: 50vh;
+        width: 50vw;
+        margin: auto;
+        position: relative;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        /* position: relative; */
+        /* top: 50px; */
+        position: absolute;
+        /* right: 0;       */
+        /* bottom: 0;   */
+        /* position: fixed; */
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+      }
+      /* Fixed will come out from the document flow but sticky will don't come out from the flow */
+      .box4 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(0, 255, 179);
+        display: inline-block;
+        position: sticky;
+      }
+      .box5 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 0, 119);
+        display: inline-block;
+        /* position: sticky; */
+      }
+
+      /* .main {
+        height: 2000px;
+      } */
+
+      .test {
+        background-color: blueviolet;
+      }
+      .test li {
+        list-style: disc inside url("bullet.png");
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        tenetur in, at libero animi id. Tempore voluptate dignissimos, pariatur
+        quasi eveniet et doloremque voluptas fugit distinctio ex omnis tenetur
+        aperiam.
+      </p>
+      <div class="box">I am a box</div>
+      <div class="box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+        reprehenderit?
+      </div>
+    </div>
+    <!-- Experimenting Fixed and sticky -->
+    <div class="main">
+      <div class="box4">Lorem ipsum dolor sit amet.</div>
+      <div class="box5">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <!-- list-style property -->
+    <ul class="test">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contacts</li>
+    </ul>
+  </body>
+</html>
