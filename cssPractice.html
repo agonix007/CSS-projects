@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 6 Curious Questions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        padding: 12px;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        margin: 0 30px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header {
+        background: blue;
+        color: white;
+      }
+      header nav img {
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+      }
+      .left {
+        height: 80vh;
+        width: 40vw;
+        /* float: left; */
+        background-color: rgb(42, 165, 118);
+      }
+      .right {
+        height: 80vh;
+        width: 40vw;
+        /* float: right; */
+        background-color: aqua;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero-img {
+        width: 100%;
+        height: 50vh;
+        background: url(./images/hero-img.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .gallery{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .gallery img{
+        width: 200px;
+        border: 2px dashed rgb(7, 177, 148);
+        border-radius: 15px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/avatar.png" alt="profile_pic" />
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="container">
+      <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        maiores laboriosam delectus quod iure voluptates aliquam reiciendis
+        officiis laudantium consequatur fugit at veniam quas natus non voluptate
+        explicabo aspernatur enim. Temporibus amet rem enim.
+      </div>
+      <div class="right">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolor
+        tempora autem, quae id possimus voluptas mollitia accusamus similique
+        aperiam iure ut magnam sit, consequatur quisquam neque, optio porro
+        velit quis dolore eaque aspernatur quidem? Hic quis quo est voluptatum.
+      </div>
+    </div> -->
+    <main>
+      <section class="hero-img"></section>
+      <section class="gallery">
+        <img src="./images/attachment1.jpeg" alt="gallery">
+        <img src="./images/attachment2.png" alt="gallery">
+        <img src="./images/attachment5.gif" alt="gallery">
+        <img src="./images/attachment3.png" alt="gallery">
+        <img src="./images/attachment4.png" alt="gallery">
+      </section>
+    </main>
+  </body>
+</html>
